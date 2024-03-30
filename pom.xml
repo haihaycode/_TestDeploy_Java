@@ -5,16 +5,15 @@
 	<groupId>tests</groupId>
 	<artifactId>tests</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<dependencies>
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
-			<version>6.1.0-M2</version>
-			<scope>compile</scope>
+			<version>6.0.0</version>
+			<scope>provided</scope>
 		</dependency>
-
 	</dependencies>
 
 
@@ -29,15 +28,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
+				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.2</version>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>test.home</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>
