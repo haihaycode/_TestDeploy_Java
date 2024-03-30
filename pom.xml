@@ -34,8 +34,6 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
 							<mainClass>test.home</mainClass>
 						</manifest>
 					</archive>
